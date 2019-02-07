@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      div.header {
+        padding: 15px;
+        border: solid 1px #a0a0a0;
+        border-radius: 8px;
+        background-color: #e0e0e0;
+      }
+      #about {
+        display: inline-block;
+        vertical-align: super;
+        padding-left: 10px;
+      }
+      #name {
+        font-size: 24px;
+      }
+      #description {
+        font-size: 12px;
+        display: block;
+      }
+      #version:before {
+        content: 'Version ';
+      }
+
+      #meta {
+        float: right;
+      }
+      #meta span {
+        display: block;
+        text-align: right;
+        color: #808080;
+      }
+
+      div.subtitle {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+      }
+
+      div.activity {
+        padding: 3px 10px;
+        font-size: 14px;
+      }
+      div.activity label {
+        padding-left: 5px;
+      }
+
+      div.notes {
+        padding: 10px;
+        font-size: 10px;
+        font-weight: lighter;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../icons/icon48.png" />
+      <div id="about">
+        <span id="name"></span> <span id="description"></span>
+      </div>
+      <span id="meta">
+        <span id="version"></span> <span id="author"></span>
+      </span>
+    </div>
+    <div class="subtitle">Choose the activity types you wish to suppress:</div>
+    <div id="options_div"></div>
+    <div class="notes">
+      You'll need to reload your Strava tab after making changes!
+    </div>
+  </body>
+  <script src="../src/config.js"></script>
+  <script src="index.js"></script>
+</html>

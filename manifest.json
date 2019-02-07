@@ -1,0 +1,19 @@
+{
+  "name": "Strava Outside",
+  "description": "Hides all those stupid indoor activities from view on Strava.",
+  "author": "Kevin McDonald",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["https://www.strava.com/", "storage"],
+  "manifest_version": 2,
+  "options_page": "options/index.html",
+  "content_scripts": [{
+    "matches": ["https://www.strava.com/dashboard*"],
+    "js": ["src/config.js", "src/inject.js"]
+  }],
+  "web_accessible_resources": ["src/*.js"]
+}
