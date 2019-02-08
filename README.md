@@ -23,10 +23,10 @@ To configure the suppressed sources, simply click the extension's icon, and unch
 to receive in your feed.
 
 ## FAQ
-Q. Is this extension safe? Will it steal my data?
-A. It is most definitely safe! I wrote this extension because there was already too much data. Why would I want yours?
-  If you are unconvinced, please review the source code. It's very small, and there's nowhere for anything nefarious to hide.
+**Q.** Is this extension safe? Will it steal my data?  
+**A.** It is most definitely safe! I wrote this extension because there was already too much data. Why would I want yours?
+If you are unconvinced, please review the source code. It's very small, and there's nowhere for anything nefarious to hide.
 
-Q. Why is this extension so difficult to install?
-A. This is the first time I ever attempted to write anything like this. From the time I thought to do it to now is approximately
-  24 hours. I just still have a lot to learn in order to make it a bit easier. But thanks for your patience!
+**Q.** Why is this extension so difficult to install?  
+**A.** This is the first time I ever attempted to write anything like this. From the time I thought to do it to now is approximately
+24 hours. I just still have a lot to learn in order to make it a bit easier. But thanks for your patience!
