@@ -1,5 +1,5 @@
 config = {
-  activityTypes: ['on Zwift', 'with The Sufferfest', 'on Peloton'],
+  activityTypes: ['Flywheel', 'Peloton', 'Sufferfest', 'Virtual', 'Zwift'],
 
   withFilteredTypes(callback) {
     config.use(data =>

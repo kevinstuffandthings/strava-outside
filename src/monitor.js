@@ -4,14 +4,18 @@
 
   const hideIndoors = function() {
     hiddenTypes.forEach(function(description) {
-      console.log(`Hiding activities: ${description}`);
-      jQuery(`div.media-body:contains(${description})`)
-        .closest('div.feed-entry')
-        .hide();
-      if (showMine) {
-        jQuery(`div.media-body a[href='/athletes/${currentAthlete.id}']`)
-          .closest('div.feed-entry')
-          .show();
+      if (description) {
+        console.log(`Hiding activities: ${description}`);
+        ['enhanced-tag', 'activity-map-tags'].forEach(function(tag) {
+          jQuery(`div.${tag}:contains(${description})`)
+            .closest('div.feed-entry')
+            .hide();
+          if (showMine) {
+            jQuery(`div.${tag} a[href='/athletes/${currentAthlete.id}']`)
+              .closest('div.feed-entry')
+              .show();
+          }
+        });
       }
     });
   };
