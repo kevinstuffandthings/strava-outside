@@ -2,7 +2,7 @@
   "name": "Strava Outside",
   "description": "Hide your friends' indoor activities from view on Strava.",
   "author": "Kevin McDonald",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",

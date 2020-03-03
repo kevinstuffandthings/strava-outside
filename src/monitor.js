@@ -1,6 +1,5 @@
 (function() {
   const hiddenTypes = document.currentScript.getAttribute('types').split('|');
-  const showMine = document.currentScript.getAttribute('showMine');
 
   const hideIndoors = function() {
     hiddenTypes.forEach(function(description) {
@@ -8,13 +7,9 @@
         console.log(`Hiding activities: ${description}`);
         ['enhanced-tag', 'activity-map-tags'].forEach(function(tag) {
           jQuery(`div.${tag}:contains(${description})`)
+            .not(`a[href='/athletes/${currentAthlete.id}']`)
             .closest('div.feed-entry')
-            .hide();
-          if (showMine) {
-            jQuery(`div.${tag} a[href='/athletes/${currentAthlete.id}']`)
-              .closest('div.feed-entry')
-              .show();
-          }
+            .slideUp(400, function() { jQuery(this).hide() });
         });
       }
     });
