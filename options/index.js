@@ -9,7 +9,6 @@ const manifestData = chrome.runtime.getManifest();
 
 config.use(function(data) {
   Object.keys(data)
-    .sort()
     .forEach(function(activityType, i) {
       let id = `cb${i}`;
       let checkbox = document.createElement('input');
@@ -21,9 +20,10 @@ config.use(function(data) {
         checkbox.checked = settings[activityType];
       });
 
+      let activityName = activityType.charAt(0) == ':' ? `All ${activityType.substr(1)} entries` : activityType;
       let label = document.createElement('label');
       label.setAttribute('htmlFor', id);
-      label.appendChild(document.createTextNode(activityType));
+      label.appendChild(document.createTextNode(activityName));
 
       checkbox.addEventListener('click', function() {
         let checked = checkbox.checked;

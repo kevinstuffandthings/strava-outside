@@ -1,5 +1,5 @@
 config = {
-  activityTypes: ['Flywheel', 'Peloton', 'Sufferfest', 'Virtual', 'Zwift'],
+  activityTypes: ['Flywheel', 'Peloton', 'Sufferfest', 'Virtual', 'Zwift', ':challenge', ':mapless'],
 
   withFilteredTypes(callback) {
     config.use(data =>
