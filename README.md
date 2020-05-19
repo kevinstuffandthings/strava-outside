@@ -36,3 +36,6 @@ If you are unconvinced, please review the source code. It's very small, and ther
 
 **Q.** I notice an indoor activity type that I can't suppress. Why?  
 **A.** To make the current list, I simply perused my personal feed looking for activities that I wanted to be able to filter. I'm sure there are more, but since they aren't currently showing up in my feed, I don't know how exactly they present themselves. If you have an activity you'd like to see suppressed, please log an [issue](https://github.com/kevinstuffandthings/strava-outside/issues) including the full text in the activity card (_Peter Sagan rode on Zwift_ or _Chris Froome rode with The Sufferfest_).
+
+## TODO
+- Currently, joint activities manifest themselves as "mapless" (despite a map being present). Need to update selector to properly identify a joint activity without the map in the typical node.
