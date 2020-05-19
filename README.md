@@ -39,3 +39,4 @@ If you are unconvinced, please review the source code. It's very small, and ther
 
 ## TODO
 - Currently, joint activities manifest themselves as "mapless" (despite a map being present). Need to update selector to properly identify a joint activity without the map in the typical node.
+- Some Peloton entries seem to be tagged differently than others, and are not being captured by the filter.
