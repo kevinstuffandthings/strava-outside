@@ -31,7 +31,7 @@ If you are unconvinced, please review the source code. It's very small, and ther
 **A.** It uses a technology called [jQuery](http://jquery.com/) to find entries in the feed that match the suppressed activity types, and simply hides them. All the heavy lifting gets done right [here](src/monitor.js).
 
 **Q.** Why is this extension so difficult to install?  
-**A.** This is the first time I ever attempted to write anything like this. From the time I thought to do it to now is approximately
+**A.** This is the first time I ever attempted to write anything like this. From the time I thought to do it to when I "released it" is approximately
 24 hours. I just still have a lot to learn in order to make it a bit easier. But thanks for your patience!
 
 **Q.** I notice an indoor activity type that I can't suppress. Why?  
